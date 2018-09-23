@@ -10,6 +10,7 @@ conda env create -f environment.yml
 - We use the `praw` package
 - Documentation links
   - [The Reddit Class](https://praw.readthedocs.io/en/latest/code_overview/reddit_instance.html)
+      - Instances of this class are the gateway to interacting with Reddit's API through PRAW.
   - [Front Page](https://praw.readthedocs.io/en/latest/code_overview/reddit/front.html)
   - [Subreddit](https://praw.readthedocs.io/en/latest/code_overview/reddit/subreddit.html)
 - First, we create an object of class `Reddit()` by passing the `OAuth` credentials
