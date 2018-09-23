@@ -1,14 +1,16 @@
 name: airflow-sequential
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
   - airflow=1.9.0=py36_2
   - alembic=0.8.10=py36_1
   - appnope=0.1.0=py36_0
   - asn1crypto=0.24.0=py36_2
   - backcall=0.1.0=py_0
+  - blas=1.0=mkl
   - bleach=2.1.2=py_0
+  - certifi=2018.8.13=py36_0
   - cffi=1.11.5=py36h5e8e0c9_1
   - chardet=3.0.4=py36_3
   - click=6.7=py_1
@@ -30,11 +32,13 @@ dependencies:
   - html5lib=1.0.1=py_0
   - icu=58.2=hfc679d8_0
   - idna=2.7=py36_2
+  - ipykernel=4.8.2=py36_0
   - ipython=6.5.0=py36_0
   - ipython_genutils=0.2.0=py_1
   - itsdangerous=0.24=py_2
   - jedi=0.12.1=py36_0
   - jinja2=2.8=py36_1
+  - jupyter_client=5.2.3=py36_0
   - libiconv=1.15=h470a237_2
   - libxml2=2.9.8=h422b904_3
   - libxslt=1.1.32=h88dbc4e_1
@@ -46,6 +50,7 @@ dependencies:
   - openblas=0.2.20=8
   - pandas=0.23.4=py36hf8a1672_0
   - parso=0.3.1=py_0
+  - patsy=0.5.0=py36_0
   - pexpect=4.6.0=py36_0
   - pickleshare=0.7.4=py36_0
   - pip=18.0=py36_1
@@ -80,14 +85,10 @@ dependencies:
   - wheel=0.31.1=py36_1
   - wtforms=2.1=py36_0
   - yaml=0.1.7=h470a237_1
-  - blas=1.0=mkl
   - ca-certificates=2018.03.07=0
-  - certifi=2018.8.13=py36_0
   - cycler=0.10.0=py36hfc81398_0
   - freetype=2.9.1=hb4e5f40_0
   - intel-openmp=2018.0.3=0
-  - ipykernel=4.8.2=py36_0
-  - jupyter_client=5.2.3=py36_0
   - jupyter_core=4.4.0=py36_0
   - kiwisolver=1.0.1=py36h0a44026_0
   - libcxx=4.0.1=h579ed51_0
@@ -106,7 +107,6 @@ dependencies:
   - numpy=1.15.0=py36h648b28d_0
   - numpy-base=1.15.0=py36h8a80b8c_0
   - openssl=1.0.2p=h1de35cc_0
-  - patsy=0.5.0=py36_0
   - pyparsing=2.2.0=py36_1
   - python=3.6.6=hc167b69_0
   - python-daemon=2.1.2=py36_0
@@ -133,14 +133,19 @@ dependencies:
     - configparser==3.5.0
     - databricks-cli==0.8.2
     - docutils==0.14
+    - funcsigs==1.0.0
     - jmespath==0.9.3
     - mlflow==0.5.1
+    - ordereddict==1.1
+    - praw==6.0.0
+    - prawcore==1.0.0
     - protobuf==3.6.1
     - pyasn1==0.4.4
     - querystring-parser==1.2.3
     - rsa==3.4.2
     - s3transfer==0.1.13
     - simplejson==3.16.0
+    - update-checker==0.16
     - uuid==1.30
-prefix: /Users/dkhosla/miniconda3/envs/airflow-sequential
+prefix: /Users/dkhosla/miniconda2/envs/airflow-sequential
 
