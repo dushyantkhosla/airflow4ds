@@ -10,6 +10,7 @@
 - [How I learned to time travel - Laura Lorenz](https://www.youtube.com/watch?v=60FUHEkcPyY)
 - [Airflow for the confused](https://blog.capitalplanning.nyc/apache-airflow-for-the-confused-b588935669df)
 - [Automated Model Building with EMR, Spark and Airflow](https://www.agari.com/identity-intelligence-blog/automated-model-building-emr-spark-airflow/)
+- [A Beginners Guide to Data Engineering](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7)
 - [Airflow on Kubernetes](https://kubernetes.io/blog/2018/06/28/airflow-on-kubernetes-part-1-a-different-kind-of-operator/)
 - [Airflow and Kubernetes Operators](https://medium.com/bluecore-engineering/were-all-using-airflow-wrong-and-how-to-fix-it-a56f14cb0753)
 
