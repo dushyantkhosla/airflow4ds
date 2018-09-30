@@ -63,11 +63,18 @@ For building robust and resilient pipelines, we need a system that has
 
 ## 3. Why Airflow?
 
+> Airflow is a platform to programmatically author, schedule and monitor workflows.
+
+There's a focus on '**programmatically authoring**' - to build things that are more dynamic and easily reviewed. Airflow provides tools to build data pipelines on-the-fly, allowing us to write workflows-as-code. It can be seen more as an orchestrator that triggers jobs on other systems. 
+
+With Airflow it becomes possible to specify rules or requirements (in a YAML or a through front end) that can be parsed and used to generate a workflow automatically. You go from being a workflow-author to being a workflow-factory (writing applications that generate pipelines), thus commoditizing the work of Data Engineers and scaling it up.
+
 ### Features
 
 - DAGs are configured via code, new tasks can be generated on-the-fly. Everything is a Python object.
 - Scheduler process handles triggering and executing work specified in DAGs on a calendar or cron-like schedule
-- Built-in *alerting and retry* based on SLAs (like timeouts) or task-state (Slack or email notification integration) 
+- Built-in *alerting* based on SLAs (like timeouts) or task-state (Slack or email notification integration) 
+- Parameterized retry - the pipeline self-heals when tasks fail and applications crash
 - *Great UI* with lots of sexy profiling visualizations to monitor DAGs, execution status and run durations of tasks
 - Actions on DAGs like `test, backfill, clear, trigger` are convenient from the CLI 
 - Variety of available *Operators* and the ability to extend them using inheritance 
