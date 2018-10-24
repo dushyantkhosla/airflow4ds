@@ -1,5 +1,7 @@
 [TOC]
 
+<img src="static/images/logo.png" width="200px" />
+
 # Airflow for Data Science
 
 ## 0. References
@@ -18,7 +20,7 @@
 
 Enterprise Data and software products (like forecast reports and sales dashboards) depend on the execution of complex workflows of tasks that catch, transform, move, analyze and display data to strategic decision makers. A workflow is just a sequence of tasks started on a schedule or triggered by an event. Workflow management systems help us organize and execute tasks that may have different dependencies, start times and durations.
 
-![image-20180912124153538](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912124153538.png)
+![](static/images/pipeline.png)
 
 Most data science projects consist of a set of tasks - obtain, scrub, explore, model, industrialize. It is trivial to stitch together and automate these tasks in a  workflow. But data is unpredictable and can cause some tasks or entire pipelines to fail. Sometimes servers die, APIs fail and connections are dropped.
 
@@ -36,7 +38,7 @@ For building robust and resilient pipelines, we need a system that has
 
 ## 2. Overview of available Tools
 
-![image-20180912124231954](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912124231954.png)
+![](static/images/available-tools.png)
 
 ### Files and Targets based systems
 
@@ -85,25 +87,23 @@ With Airflow it becomes possible to specify rules or requirements (in a YAML or 
 
 - DAGs overview
 
-![image-20180912132103610](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912132103610.png)
-
-![image-20180912132207220](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912132207220.png)
+![](static/images/dags-overview.png)
 
 - Tree View
 
-![image-20180912132954168](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912132954168.png)
+![](static/images/tree-view.png)
 
 - Graph View helps visualize task dependencies and status for a specific run
 
-![image-20180912132924058](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912132924058.png)
+![](static/images/graph-view.png)
 
 - Gantt Chart to discover tasks that are blockers
 
-![image-20180912132513010](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912132513010.png)
+![](static/images/gantt.png)
 
 ## 4. Concepts
 
-![image-20180912135134844](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912135134844.png)
+![](static/images/concepts.png)
 
 ### DAGs
 
@@ -201,7 +201,7 @@ task_1.set_downstream(task_2)
 
 ### Airflow Execution
 
-![image-20180912133640748](/var/folders/kv/l02c_chn7tqd9cmrvyms7vy4bfc09j/T/abnerworks.Typora/image-20180912133640748.png)
+![](static/images/execution.png)
 
 - At its core, Airflow is simply **a queuing system** built on top of **a metadata database**. 
 - The **metadata database** stores task states
